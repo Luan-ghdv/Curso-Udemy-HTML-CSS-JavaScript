@@ -1,0 +1,35 @@
+body {
+    background-color: #ffe4c4;
+}
+
+h1 {
+    color: #006648;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+}
+
+h2 {
+    color: #fe0122;
+    font-size: 31px; 
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    background-color: rgb(179, 179, 179);
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    color: #67f;
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+    font-variant: normal;
+}
