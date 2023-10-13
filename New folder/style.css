@@ -1,68 +1,100 @@
 @charset "UTF-8";
 
 body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    background-color: #ccc;
 }
 
 header {
     background-image: url(imagens/bg-1.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: top right;
+    padding: 1px;
+}
+
+.titulo {
+    margin: 110px auto 0 auto ;
+    width: 80%;
+    text-align: center;
     color: white;
+}
+
+h1 {
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+}
+
+h4 {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 2px white solid;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 12px 10px 5px;
+    
 }
 
 nav ul {
     list-style-type: none;
+    text-align: right;
 }
 
-nav ul li {
-    border: 1px white solid;
-    padding: 8px;
-    text-align: center;
-    margin: 9px;
-    display: inline-block;
-}
-
-li a {
+ul li a {
     text-decoration: none;
     color: white;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.322);
+    display: inline-block;
     text-transform: uppercase;
+    border: 2px solid white;
+    padding: 8px;
     
 }
 
-.hero-content {
-    text-align: center;
-}
-
-h2 {
-    background-color: rgba(0, 0, 0, 0.397);
-    border-bottom: 3px white solid;
+nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.523);
 }
 
 main {
-    background-color: rgba(189, 189, 189, 0.808);
-}
-
-section {    
-    width: 950px;
+    width: 90%;
     margin: auto;
-    padding: 80px;
 }
 
 article {
-    padding: 40px;
     background-color: white;
-    margin-bottom: 40px;
+    padding: 16px;
+    margin-bottom: 27px;
+    margin-top: 32px;
 }
 
 h3 {
-    background-color: rgba(189, 189, 189, 0.808);
-    padding: 7px;
-    border-bottom: 2px rgb(128, 128, 128) solid ;
+    background-color: #ccc;
+    border-bottom: 2px solid #777676;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.articlelink {
+    background-color: #ccc;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 6px;
+    margin-left: auto;
+    width: fit-content;
 }
 
 footer {
-    background-color: rgb(77, 76, 76);
-    text-align: center;
     color: white;
+    text-align: center;
+    background-color: #777676;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
 }
