@@ -1,0 +1,123 @@
+/* Escreva aqui as suas folhas de estilo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+/*font-family: 'Federo', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+
+html, body {
+    margin: 0;
+}
+
+.header-top {
+    background-image: url(../imagens/topo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 488px;
+}
+
+.header-menu {
+    background-color: #162028;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu__list {
+    list-style-type: none;   
+    display: flex;
+    align-items: center;
+}
+
+.menu-title {
+    text-decoration: none;
+    font-size: 2.4em;
+    color: #c9c9c9;
+    font-family: 'Federo', sans-serif;
+    margin-right: 600px;
+}
+
+.menu-contact {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #426b86;
+    letter-spacing: 0.3em;
+    margin-right: 40px;
+}
+
+.article-01 {
+    text-align: center;
+}
+
+.article-01__title {
+    font-family: 'Federo', sans-serif;
+    font-weight: 100;
+    font-size: 2.1em;
+    padding: 20px;
+}
+
+.article-01__text {
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+.img-article {
+    display: flex;
+    width: 800px;
+    margin: auto;
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.title-img {
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.adjetivo-img {
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+}
+
+.article-02 {
+    padding: 3rem;
+    margin-top: 100px;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #c9c9c9;
+}
+
+.article-02__title {
+    font-family: 'Federo', sans-serif;
+    font-weight: 100;
+    margin: 15px;
+    font-size: 3.3rem;
+}
+
+.article-02__text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
+    width: 500px;
+    margin: 15px;
+}
+
+footer {
+    background-color: #162028;
+    font-size: 1.1em;
+    color: #426b86;
+    display: flex;
+    justify-content: center;
+}
