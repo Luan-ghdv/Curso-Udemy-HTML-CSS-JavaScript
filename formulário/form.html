@@ -7,6 +7,10 @@
         body{
             padding-bottom: 100vh;
         }
+
+        textarea{
+            resize: none;
+        }
     </style>
 </head>
 <body>
@@ -14,7 +18,7 @@
         <fieldset>
             <legend>Introdução</legend>
             <label for="">Email</label><br>
-            <input type="email" name="email" required>
+            <input type="email" name="email" maxlength="10"  placeholder="meuemail@gmail.com">
             <br><br>
 
             <label for="">Quantidade de filhos</label><br>
@@ -87,8 +91,43 @@
             </label>
         </fieldset>
 
+        <fieldset>
+            <legend>mensagem</legend>
+            <textarea name="msg" cols="50" rows="8" maxlength="255"></textarea>
+            <br><br>
+            <textarea cols="50" rows="8" disabled>
+CONTRATO DE UTILIZAÇÃO
+    1.1 REGRA 1
+
+    1.2 REGRA 2
+            </textarea>
+            <label>
+                <input type="checkbox" checked>Li e aceito o contrato
+            </label>
+
+            <br><br>
+            <input type="file">
+        </fieldset>
+
+        <input type="hidden" value="abcdef123">
+
         <br><br><br>
-            <input type="submit" value="mandar">
+        <input type="submit" value="mandar">
+        <input type="button" value="button">
+
+        <button type="submit">mandar com tag button</button>
+        <button type="button"> <b>botão</b> </button>
+
+        <input type="search">
+
+        <br><br>
+
+        <input type="range" min="0" max="10" step=".5">
+
+        <br><br>
+        <input type="time">
+        <br><br>
+        <input type="color">
     </form>
 </body>
 </html>

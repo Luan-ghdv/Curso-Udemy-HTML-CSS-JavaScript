@@ -1,86 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <style>
-        html {
-            background-color: rgb(136, 94, 94);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: auto;
-        }
-
-        form {
-            border: 1px solid black;
-            width: 400px;
-            background-color: rgb(212, 209, 209);
-        }
-
-        div {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        fieldset {
-            border-radius: 3px;
-            margin: 7px;
-        }
-
-        legend {
-            text-align: center;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        label {
-            font-weight: 500;
-            
-        }
-
-        input {
-            width: 100%;
-            height: 1.4rem;
-        }
-
-        .button {
-            width: 100px;
-            height: 30px;
-            margin-left: auto;
-            
-        }
-    </style>
-    <title>Testando formulários</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="post">
-        <fieldset>
-            <legend>Preencha o formulário</legend>
+    <header class="top">
+        <!--<h1 class="logoTipo">LogoTipo</h1> -->
+        <h1><a href="teste.html" rel="next" target="_self" class="logoTipo">LogoTipo</a></h1>
+        <nav class="topList">
+            <ul class="listItem">
+                <a href="formulario_teste.html" target="_self"><li>Formulário</li></a>
+                <a href="#"><li>Imagens</li></a>
+                <a href="#"><li>Item3</li></a>
+            </ul>
+        </nav>
+    </header>
 
-            <div>
-                <label for="nome">Name: </label>
-                <input type="text" id="name" required>
-            </div>
+    <main class="main">
+        <article class="box_text">
+            <h2 class="title_text">Título 1</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi libero praesentium minus animi ullam repellendus vitae a culpa voluptate quo earum incidunt modi, rerum molestias quidem neque? Laudantium iure cumque voluptatem ex culpa optio, inventore animi veritatis eveniet nisi. Maxime numquam quaerat voluptatum necessitatibus velit nesciunt at ratione! Nostrum voluptate explicabo quis laboriosam aperiam harum facere molestiae perferendis quaerat. Ea quod odio molestiae reprehenderit consectetur repudiandae praesentium dolorum, beatae accusamus officia sapiente, nam magnam laboriosam, quisquam assumenda earum nesciunt a quasi dignissimos! Beatae ratione placeat unde at quo iure deleniti obcaecati totam nisi labore magnam veritatis provident, aspernatur ipsum nemo, architecto id! Ipsam repellat autem in omnis adipisci ipsa porro deserunt aliquam at, quam, quae sequi voluptatem, dolorem amet non sapiente voluptatibus mollitia illo culpa sed blanditiis quisquam? Voluptas provident commodi, sequi quos praesentium nam. Numquam magnam aliquam maxime veniam dolorem sit eligendi rem dolor hic quod est accusamus fugit quia iure doloremque unde, nesciunt itaque commodi dolore accusantium doloribus. Adipisci, sequi, ab reprehenderit explicabo quis vitae quaerat omnis illum sed possimus dolor et dolorum, earum deserunt. Hic veniam quae, ad molestiae at, soluta possimus aliquid numquam omnis mollitia provident dolorum obcaecati. Perferendis tempora quo qui repellat provident sapiente perspiciatis?
+            </p>
+        </article>
 
-            <div>
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" required>
-            </div>
-
-            <div>
-                <label for="nascimento">Data de Nascimento: </label>
-                <input type="date" min="1990-01-01" max="2024-12-31">
-            </div>
-
-            <div>
-                <input type="submit" value="Enviar" class="button">
-            </div>
-        </fieldset>
-    </form>
+        <article class="box_text">
+            <h2 class="title_text">Título 2</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quos architecto, temporibus deserunt, sunt nam a itaque dignissimos natus repellat, quaerat suscipit at asperiores dolorum sit laborum animi reprehenderit veritatis dolores soluta. Provident rem reiciendis quas suscipit fuga totam laborum saepe sequi soluta consequatur et, itaque ad id voluptas eligendi nulla rerum dolorum consectetur odit maxime officiis dolor ipsam numquam atque. Corrupti incidunt doloremque dolorum velit perspiciatis fugiat neque provident culpa nesciunt vitae amet molestias ea assumenda, ipsam fugit sit quos excepturi! Libero sit sint deserunt quidem error reiciendis! Libero repellendus impedit odio, inventore assumenda est saepe unde earum corporis dolores nemo eligendi optio veniam distinctio obcaecati. Dolor, ex? Enim beatae dignissimos, doloribus dolorem eos nobis incidunt reiciendis vel sint molestias. Unde omnis laborum vitae harum nam praesentium, doloremque cumque magnam velit facere placeat molestiae. Inventore earum voluptatem non eaque, perferendis ipsa quas possimus aliquid numquam, nobis, reprehenderit quia maxime. Deserunt accusantium, repellat nemo magnam quas exercitationem accusamus quaerat amet iure beatae quis quidem alias esse est optio. Eum, in!
+            </p>
+        </article>
+    </main>
 </body>
 </html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color1: #3a68b7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color1);
+    font-family: "Roboto", sans-serif;
+}
+
+.form {
+    width: 80%;
+    max-width: 32rem;
+    /*background-color: white;*/
+    /*border-left: 10px solid rgba(0, 0, 0, .5);*/
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2) .5rem, white .5rem);
+}
+
+.formField {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .34em;
+    padding: 1.4rem;
+}
+
+.titleForm {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--color1);
+    padding-top: 2rem;
+}
+
+.formLabel {
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.formInput {
+    padding: .5em 0;
+    font-size: 1.1rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--color1);
+    margin-bottom: .6rem;
+    outline: none;
+}
+
+.formInput:focus {
+    outline: 1px solid var(--color1);
+    padding-left: .5rem;
+    transition: padding-left .07s;
+    border-radius: 3px;
+}
+
+.formAction {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn_first {
+    background-color: var(--color1);
+    color: white;
+}
+
+.btn_second {
+    background-color: white;
+    color: var(--color1);
+}
+
+.formAside {
+    font-size: .75rem;
+    flex-grow: 1;
+    text-align: right;
+}

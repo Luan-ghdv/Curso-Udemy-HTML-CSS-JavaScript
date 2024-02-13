@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dbdbdb;
+}
+        
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #586a6a7c;
+}
+
+.logoTipo{
+    color: #5C1A1B;
+    font-family: 'Rubik Mono One', monospace;
+    text-decoration: none;
+}
+
+.logoTipo:hover {
+    color:#B57F50;
+    text-decoration: underline;
+}
+
+.listItem{
+    list-style-type: none;
+    color: #B57F50;
+    font-family: 'Oswald', sans-serif;
+}
+
+.listItem a{
+    display: inline-block;
+    color: #5C1A1B;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+.listItem a:hover{
+    color: #B57F50;
+    text-decoration: underline;
+}
+
+.main{
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+}
+       
+.box_text{
+    color: #B57F50;
+}
+
+.title_text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
+.text{
+    color: #001514;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+/*A partir daqui é o css da página 'formulario_teste'*/
+
+.form {
+    color: #001514;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px #5C1A1B;
+}
+
+.box_form {
+    width: 500px;
+    text-align: center;
+    border: none;
+}
+
+.titleForm {
+    text-transform: uppercase;
+    color: #B57F50;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.formItem {
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input {
+    border: #001514 1px solid;
+    border-radius: 4px;
+    height: 1.5rem;
+}
