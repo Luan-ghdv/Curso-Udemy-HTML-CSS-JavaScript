@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p b {
+            color: blue;
+        }
+
+        a[href^="#"]:not(.teste) {
+            font-size: 1.5rem;
+            color: lightgreen;
+        }
+
+        p i {
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit <b>amet</b> consectetur adipisicing elit. Libero, voluptas.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur! <a href="#" class="teste">testando</a></p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis inventore deserunt dicta. <a href="#">testando</a></p>
+
+    <p>Lorem ipsum dolor sit <i>amet</i> consectetur <i>adipisicing</i> elit. <i>Praesentium</i>, mollitia amet?</p>
+</body>
+</html>
