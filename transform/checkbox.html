@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        input[type="checkbox"]{
+            display: none;
+        }
+        label span{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+        }
+        input[type="checkbox"]:checked + label span{
+            background-color: blue;
+        }
+    </style>
+    <title>Checkbox</title>
+</head>
+<body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html">
+    <label for="html" checked>
+        <span></span>
+        HTML
+    </label>
+
+    <input type="checkbox" id="css">
+    <label for="css">
+        <span></span>
+        CSS
+    </label>
+
+    <input type="checkbox" id="js">
+    <label for="js">
+        <span></span>
+        Javascript
+    </label>
+</body>
+</html>

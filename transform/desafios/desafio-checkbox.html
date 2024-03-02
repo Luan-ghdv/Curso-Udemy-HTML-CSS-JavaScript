@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .chk1{
+            display: none;
+        }
+        .chk1+label span{
+            display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            height: 1em;
+            background-color: red;
+        }
+        .chk1:checked+label span{
+            background-color: blue;
+            position: relative;
+        }
+        .chk1:checked+label span::before{
+            content: "";
+            display: block;
+            border: .087em solid white;
+            position: absolute;
+            top: 0px;
+            left: .38em;
+            right: .3em;
+            bottom: .3em;
+            transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="item1" class="chk1">
+    <label for="item1" >
+        <span></span>
+        ItemI
+    </label>
+
+    <input type="checkbox" id="item2" class="chk1">
+    <label for="item2" >
+        <span></span>
+        ItemII
+    </label>
+
+    <input type="checkbox" id="item3" class="chk1">
+    <label for="item3" >
+        <span></span>
+        ItemIII
+    </label>
+
+    <hr>
+
+    <label>
+        <input type="checkbox">
+        HTML
+    </label>
+
+    <label>
+        <input type="checkbox">
+        CSS
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Javascript
+    </label>
+</body>
+</html>
