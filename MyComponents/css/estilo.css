@@ -35,8 +35,11 @@ h2 {
 }
 
 article {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding: 1em 0;
+}
+
+section {
+    margin-bottom: 3rem;
 }
 
 .main-header {
@@ -80,7 +83,7 @@ a {
     background-color: transparent;
 }
 
-.main-nav ul a:hover {
+.main-nav ul a:hover, .main-nav ul a:focus {
     background-color: var(--secondary-color-light);
     padding-right: 1rem;
 }
@@ -90,8 +93,50 @@ a {
     padding: .4rem 0;
 }
 
-/*Abaixo página tipografia*/
-
 .underline {
     text-decoration: underline;
+}
+
+.highlight {
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding: 0 0 0 2em;
+    margin-bottom: 2.2em;
+}
+
+.card {
+    max-width: 740px;
+    background-color: var(--secondary-color);
+    padding: 0;
+}
+
+.card_content {
+    padding: .5em 1em 1em;
+}
+
+.card_content p, .card_title {
+    margin: 0;
+}
+
+.card_title {
+    font-size: 1.75em;
+    margin-bottom: .25em;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 3rem;
+    padding-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.row > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+    /*flex: 1 0 0%; */
 }
