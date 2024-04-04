@@ -3,6 +3,8 @@
     --secondary-color: #31333B;
     --secondary-color-light: #444856;
     --secondary-color-dark: #23252d;
+
+    --default-gap: 3rem;
 }
 
 html {
@@ -17,13 +19,18 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7;
+    
+    background-image: url(../imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
     font-size: 4rem;
     color: #a9a7a7;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: var(--default-gap);
 }
 
 h2, h3, h4, h5, h6 {
@@ -40,16 +47,17 @@ article {
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: var(--default-gap);
 }
 
 .main-header {
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
+    background-color: rgb(49, 51, 59, .8);  
 }
 
 .main {
     background-color: var(--secondary-color-light);
+    background-color: rgba(68, 72, 86, .6);
     flex: 1 0;
     padding: 6.5rem 6rem 100vh;
 }
@@ -69,6 +77,9 @@ a {
 .main-nav {
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .main-nav ul {
@@ -134,7 +145,7 @@ a {
 
 .row {
     display: flex;
-    gap: 3rem;
+    gap: var(--default-gap);
     padding-top: 1.5rem;
     justify-content: space-between;
 }
@@ -191,6 +202,13 @@ input, textarea, select {
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+    /*padding: 1.2rem;*/
+    padding: .8em 1.2em;
+    border-radius: 5px;
+}
+
+.btn + .btn {
+    margin-left: 2rem;
 }
 
 .btn:hover, .btn:focus{
@@ -201,6 +219,52 @@ input, textarea, select {
     background-color: transparent;
 }
 
+.btn-big {
+    font-size: 1.6rem;
+}
+
+.btn-full {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-full + .btn-full {
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
 .form-quiz {
-    width: calc(50% - 1.5rem);
+    /*width: calc(50% - 1.5rem);*/
+    width: calc(50% - var(--default-gap) / 2);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td:last-child, .table th:last-child {
+    text-align: right;
+}
+
+.table td, .table th {
+    padding: 1.6rem; 
+}
+
+.table:not(.table-alternate) td, .table:not(.table-alternate) th {
+    border-bottom: 2px solid var(--secondary-color-dark);
+}
+
+.table th {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.table-alternate tbody tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+.table-verticalLines td:not(:last-child), .table-verticalLines th:not(:last-child) {
+    border-right: 1px solid var(--secondary-color-dark);
 }

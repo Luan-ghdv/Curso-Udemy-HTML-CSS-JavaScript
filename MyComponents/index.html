@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/brands.css">
+    <link rel="stylesheet" href="assets/icomoon-svg/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Projeto My Components</title>
+    
+    <style>
+        /*
+        .fa-brands {
+            font-size: 4rem;
+            color: var(--primary-color);
+        }
+
+        .icon {
+            width: 4rem;
+            height: 4rem;
+            fill: red;
+        }
+        */
+
+        .link-icon {
+            display: inline-block;
+            margin-right: 3rem;
+            transition: color .3s;
+            text-decoration: none;
+            font-style: normal;
+        }
+        
+        .link-icon svg {
+            width: 4rem;
+            height: 4rem;
+            fill: currentColor;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .link-icon:hover {
+            color: var(--primary-color);
+        }
+    </style>
 </head>
 
 <body>
@@ -20,8 +59,8 @@
                 <li><a href="cards.html">Cards</a></li>
                 <li><a href="listas.html">Listas</a></li>
                 <li><a href="formulario.html">Formulário</a></li>
-                <li><a href="#">Botões</a></li>
-                <li><a href="#">Tabelas</a></li>
+                <li><a href="botões.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
             </ul>
 
         </nav>
@@ -40,13 +79,40 @@
         </article>
 
         <address>
-            <h3>Venha conhecer minhass redes sociais</h3>
-
+            <h3>Venha conhecer minhas redes sociais</h3>
+            <!--
             <p>
-                <a href="#">YouTube</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Linkedin</a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></i></a>
+            </p>
+
+            <svg class="icon">
+                <use xlink:href="assets/icomoon-svg/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+            -->
+            <p>
+                <a href="#" class="link-icon">
+                    <svg>
+                        <use xlink:href="assets/icomoon-svg/symbol-defs.svg#icon-youtube"></use>
+                    </svg>YouTube
+                </a>
+                <a href="#" class="link-icon">
+                    <svg>
+                        <use xlink:href="assets/icomoon-svg/symbol-defs.svg#icon-instagram"></use>
+                    </svg>Instagram
+                </a>
+                <a href="#" class="link-icon">
+                    <svg>
+                        <use xlink:href="assets/icomoon-svg/symbol-defs.svg#icon-twitter"></use>
+                    </svg>Twitter
+                </a>
+                <a href="#" class="link-icon">
+                    <svg>
+                        <use xlink:href="assets/icomoon-svg/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>LinkedIn
+                </a>
             </p>
         </address>
     </main>
