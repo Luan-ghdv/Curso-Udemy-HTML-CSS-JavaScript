@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.4em;
+        }
+        .gridContainer{
+            display:grid;
+            width: 600px;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px 100px;
+        }
+        .gridItem:nth-child(odd){
+            background-color: rgb(181, 120, 238);
+            color: white;
+        }
+        .gridItem:nth-child(even){
+            background-color: rgb(192, 192, 224);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+    </div>
+</body>
+</html>
