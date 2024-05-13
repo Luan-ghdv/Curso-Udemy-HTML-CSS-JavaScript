@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes teste {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        #anima {
+            background-color: grey;
+            outline: 2px solid black;
+            border-radius: 3px;
+        }
+
+        #anima div {
+            width: 100px;
+            height: 50px;
+            background-color: darkgreen;
+            margin: 4px;
+        }
+        #anima div:nth-child(1) {
+            animation-name: teste;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="anima">
+        <div>1</div>
+    </div>
+</body>
+</html>
