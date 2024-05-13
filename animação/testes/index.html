@@ -11,8 +11,34 @@
                 transform: translateX(0);
             }
 
+            20% {
+                background-color: white;
+            }
+
+            50% {
+                background-color: black;
+            }
+
+            70% {
+                background-color: brown;
+            }
+
             to {
                 transform: translateX(500px);
+            }
+        }
+
+        @keyframes altura {
+            0% {
+                height: 10px;
+            }
+
+            34% {
+                height: 50px;
+            }
+
+            100% {
+                height: 10px;
             }
         }
 
@@ -25,15 +51,16 @@
         #anima div {
             width: 100px;
             height: 50px;
-            background-color: darkgreen;
+            background-color: lightgrey;
             margin: 4px;
         }
         #anima div:nth-child(1) {
-            animation-name: teste;
+            /*animation-name: teste;
             animation-duration: 4s;
-            animation-iteration-count: 4;
+            animation-iteration-count: infinite;
             animation-timing-function: linear;
-            animation-direction: alternate;
+            animation-direction: alternate;*/
+            animation: teste 5s infinite linear normal, altura 5s infinite linear;
         }
     </style>
 </head>
