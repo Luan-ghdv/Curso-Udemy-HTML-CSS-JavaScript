@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops - Dados 2</h1>
+    
+    <script>
+        let quantasVezesDadosJogados = parseInt(0);
+        let quantasVezesSomaEhPar = parseInt(0);
+
+        while(true) {
+            let dado1 = parseInt(Math.random() * 7);
+            let dado2 = parseInt(Math.random() * 7);
+
+            console.log(dado1, dado2, quantasVezesDadosJogados, quantasVezesSomaEhPar);
+            quantasVezesDadosJogados++;
+
+            if((dado1 + dado2)  % 2 === 0) {
+                quantasVezesSomaEhPar++;
+            }
+
+            if(quantasVezesSomaEhPar >= 10) {
+                break;
+            }
+        }
+
+        console.log("Os dados foram jogados " + quantasVezesDadosJogados + " vezes")
+    </script> 
+</body>
+</html>
