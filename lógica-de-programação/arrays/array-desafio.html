@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Desafio</title>
+</head>
+<body>
+    <h1>Array - Desafio</h1>
+
+    <script>
+        nomes = ["Matheus", "Pedro", "Lucas", "Patrick", "Luan"];
+
+        let nome = prompt("Digite seu nome: ");
+        nomes[nomes.length] = nome;
+
+        for(let i = 0; i < nomes.length; i++) {
+            document.write("nome: " + nomes[i] + "<br>");
+        }
+        document.write("<hr>" + "O total de nomes são: " + nomes.length);
+    </script>
+</body>
+</html>
