@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio 04 - Arrays</h1>
+
+    <script>
+        const lista = ['quarta', 4, 'digimon', 15, 24, 34, 'feijão'];
+
+        let soma = 0;
+        for(let c = 0; c < lista.length; c = c + 1) {
+            if(typeof lista[c] === 'number') {
+                soma = lista[c] + soma;
+            }
+        }
+
+        alert("A soma total dos números é: " + soma);
+    </script>
+</body>
+</html>
