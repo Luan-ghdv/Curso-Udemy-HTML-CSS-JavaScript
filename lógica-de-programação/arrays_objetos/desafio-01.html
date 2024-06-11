@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Desafio</h1>
+
+    <ul id="nome">
+
+    </ul>
+
+    <script>
+        const nomes = [
+            {
+                nome: "Matheus",
+                notas: [9, 8, 7, 9]
+            },
+            {
+                nome: "Rebecca",
+                notas: [10, 9, 8, 7]
+            }
+        ];
+
+        const nome = document.getElementById("nome");
+
+        let mostrar = "";
+
+        for (let c = 0; c < nomes.length; c++) {
+            mostrar += `<li> ${nomes[c].nome}`;
+            mostrar += `<ul>`;
+            for (let d = 0; d < nomes[c].notas.length; d++) {
+                mostrar += `<li> ${nomes[c].notas[d]} </li>`;
+            }
+            mostrar += `</ul>`;
+            mostrar += `</li>`;
+        }
+
+        nome.innerHTML = mostrar;
+    </script>
+</body>
+</html>
+
