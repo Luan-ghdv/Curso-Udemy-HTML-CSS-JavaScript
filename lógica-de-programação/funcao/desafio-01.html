@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Função - Limpar tabuada</title>
+
+    <style>
+        #output {
+            border: 2px solid black;
+            width: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Função Tabuada</h1>
+
+    <input type="number" id="number">
+    <button onclick="mostrarTabuada()">Mostrar tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+        const input = document.getElementById("number");
+        const output = document.getElementById("output");
+
+        let tabuadaMostra = "";
+
+        function mostrarTabuada() {
+            const inputValor = Number(input.value);
+
+            for (let c = 1; c <= 100; c++) {
+                tabuadaMostra = tabuadaMostra + `${c} x ${inputValor} = ${c * inputValor} <br>`;
+            }
+            output.innerHTML = tabuadaMostra;
+        }
+
+        mostrarTabuada()
+    </script>
+</body>
+</html>
