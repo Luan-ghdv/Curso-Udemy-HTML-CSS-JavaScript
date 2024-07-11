@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste-Desafio</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #showTabuada{
+            border: 3px solid black;
+            border-radius: 4px;
+            width: 50%;
+            margin: 1em auto;
+            padding: .2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+
+    <label>Digite um valor: </label>
+    <input type="number" value="0" id="input">
+    <button onclick="tabuada()">Mostrar Tabuada</button>
+    <div id="showTabuada"></div>
+
+    <script>
+        function tabuada() {
+            let input = document.getElementById("input");
+            let showTabuada = document.getElementById("showTabuada");
+
+            let valor = input.value;
+            if (valor <= 0) {
+                window.alert("Digite um número maior que zero.");
+                return;
+            }
+
+            let c = 1;
+            showTabuada.innerHTML = ''; // Limpa o conteúdo anterior
+
+            while (c <= 10) {
+                showTabuada.innerHTML += `${valor} x ${c} = ${valor * c}<br>`;
+                c++;
+            }
+        }
+    </script>
+</body>
+</html>
+
